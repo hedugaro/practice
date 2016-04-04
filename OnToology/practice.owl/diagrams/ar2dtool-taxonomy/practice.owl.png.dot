@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Transaction" "base:Normal_Transaction" "base:Message_Transaction" "base:Externally_Owned_Account" "base:Contract_Account" "base:Account" ; /*classes style*/
+	"base:Contract_Account" -> "base:Account" [ label = "rdfs:subClassOf" ];
+	"base:Externally_Owned_Account" -> "base:Account" [ label = "rdfs:subClassOf" ];
+	"base:Normal_Transaction" -> "base:Transaction" [ label = "rdfs:subClassOf" ];
+	"base:Message_Transaction" -> "base:Transaction" [ label = "rdfs:subClassOf" ];
+
+}

@@ -1,0 +1,38 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Transaction" "base:Normal_Transaction" "base:Message_Transaction" "base:Contract_Account" "base:BlockHeader" "base:Block" "base:Account" ; /*classes style*/
+	"NULL" -> "-47f2c545:153e2e67d8d:-7ffa" [ label = "rdf:rest" ];
+	"NULL" -> "base:Account" [ label = "rdf:first" ];
+	"NULL" -> "rdf:nil" [ label = "rdf:rest" ];
+	"NULL" -> "base:Transaction" [ label = "rdf:first" ];
+	"NULL" -> "-47f2c545:153e2e67d8d:-7ffb" [ label = "owl:members" ];
+	"NULL" -> "-47f2c545:153e2e67d8d:-7ff8" [ label = "rdf:rest" ];
+	"NULL" -> "base:BlockHeader" [ label = "rdf:first" ];
+	"NULL" -> "-47f2c545:153e2e67d8d:-7ff9" [ label = "rdf:rest" ];
+	"NULL" -> "base:Block" [ label = "rdf:first" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:coin_base" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:nonce_transaction" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:state_root_block" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:uncle_hash" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:v" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:s" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:extra_data" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:r" ];
+	"base:Account" -> "xsd:integer" [ label = "base:balance" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:parent_hash" ];
+	"base:BlockHeader" -> "xsd:integer" [ label = "base:timestamp" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:nonce_blockheader" ];
+	"base:Message_Transaction" -> "xsd:string" [ label = "base:init" ];
+	"base:BlockHeader" -> "xsd:integer" [ label = "base:difficulty" ];
+	"base:Contract_Account" -> "xsd:string" [ label = "base:code_hash" ];
+	"base:Normal_Transaction" -> "xsd:string" [ label = "base:data" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:gas" ];
+	"base:Transaction" -> "xsd:string" [ label = "base:recipient" ];
+	"base:Contract_Account" -> "xsd:string" [ label = "base:storage_root" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:gas_price" ];
+	"base:Transaction" -> "xsd:integer" [ label = "base:amount" ];
+	"base:Account" -> "xsd:integer" [ label = "base:nonce_account" ];
+	"base:BlockHeader" -> "xsd:string" [ label = "base:transaction_hash" ];
+
+}

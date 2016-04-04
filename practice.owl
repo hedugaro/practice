@@ -30,6 +30,7 @@
     
 
 
+
     <!-- http://www.example.com/cryptocurrency.owl#balance -->
 
     <owl:DatatypeProperty rdf:about="http://www.example.com/cryptocurrency.owl#balance">
